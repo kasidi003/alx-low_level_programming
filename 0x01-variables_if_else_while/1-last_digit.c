@@ -9,12 +9,14 @@ int main() {
     srand(time(0));
     n = rand();
 
-    /* Extract the last digit of n */
-    int lastDigit;
-    lastDigit = n % 10;
+    /* Print the number */
+    printf("Last digit of %d is ", n);
 
-    /* Print the number and its last digit */
-    printf("Last digit of %d is %d", n, lastDigit);
+    /* Extract the last digit of n */
+    int lastDigit = n % 10;
+
+    /* Print the last digit */
+    printf("%d", lastDigit);
 
     /* Check the last digit and print the appropriate message */
     if (lastDigit > 5) {
